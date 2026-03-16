@@ -32,3 +32,15 @@ img {
     border-bottom: 3px solid #0d6efd;
     padding-bottom: 25px;
 }
+
+.hero-it-takes-two {
+    min-height: 520px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.55)),
+    url("../img/it-takes-two-hero-banner-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-logo {
+    max-width: 260px;
+}
