@@ -56,3 +56,8 @@ img {
 .ps-now {
     background-color: #161c3b;
 }
+
+.social-icon {
+    max-width: 120px;
+    margin-inline: auto;
+}
