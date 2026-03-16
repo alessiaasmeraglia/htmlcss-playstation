@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.sony-logo {
+    height: 14px;
+}
+
+.ps-logo {
+    width: 24px;
+}
+
+.hero-returnal {
+    min-height: 520px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.55)),
+    url("/img/jumbo-bg.png");
+    background-size: cover;
+    background-position: center;
+}
