@@ -58,7 +58,7 @@ img {
 }
 
 .social-icon {
-    max-width: 120px;
+    max-width: 70px;
     margin-inline: auto;
 }
 
@@ -66,8 +66,8 @@ footer {
     background-color: #00439c;
 }
 
-.footer-logo {
-    max-width: 120px;
+.img-logo {
+    max-width: 10px;
 }
 
 .globe-icon {
