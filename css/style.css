@@ -61,3 +61,15 @@ img {
     max-width: 120px;
     margin-inline: auto;
 }
+
+footer {
+    background-color: #00439c;
+}
+
+.footer-logo {
+    max-width: 120px;
+}
+
+.globe-icon {
+    width: 18px;
+}
