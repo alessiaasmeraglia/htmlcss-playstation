@@ -100,8 +100,8 @@ img {
 .thumb-card {
   overflow: hidden;
   padding: 3px;
-  border: 2px solid transparent;
-  border-radius: 18px;
+  border: 3px solid transparent;
+  border-radius: 20px;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
@@ -300,8 +300,9 @@ img {
 }
 
 .accessory-card p {
-  font-size: 0.62rem;
+  font-size: 0.72rem;
   line-height: 1.15;
+  display: none;
 }
 
 .navbar-collapse {
