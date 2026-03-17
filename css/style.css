@@ -227,6 +227,11 @@ img {
 }
 
 /* FOOTER */
+.social-icon {
+
+  border-radius: 50%;
+}
+/* FOOTER */
 
 .footer-ps {
   background-color: var(--ps-footer);
@@ -342,6 +347,7 @@ img {
   .accessory-img {
     height: 86px;
   }
+
 }
 
 
