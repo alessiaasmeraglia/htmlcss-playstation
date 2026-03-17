@@ -1,75 +1,255 @@
+:root {
+  --ps-blue: #0070d1;
+  --ps-blue-dark: #00439c;
+  --ps-orange: #cd3d0f;
+  --ps-footer: #00439c;
+  --ps-plus-bg: #bebcbb;
+  --ps-now-bg: #161c3b;
+  --ps-text: #1f1f1f;
+}
+
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ps-text);
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
+}
+
+.top-sony {
+  height: 36px;
 }
 
 .sony-logo {
-    height: 14px;
+  height: 14px;
 }
 
 .ps-logo {
-    width: 24px;
+  width: 24px;
+}
+
+.search-btn,
+.navbar .nav-link,
+.navbar .btn {
+  font-size: .78rem;
+}
+
+.text-ps-blue {
+  color: var(--ps-blue);
+}
+
+.ls-2 {
+  letter-spacing: .12em;
+}
+
+.section-space {
+  padding: 4.5rem 0;
+}
+
+.section-title {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+.display-console-title {
+  font-size: clamp(2rem, 2.8vw, 2.7rem);
+  font-weight: 400;
+}
+
+.intro-copy {
+  max-width: 700px;
+}
+
+.hero {
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-returnal {
-    min-height: 520px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.55)),
-    url("/img/jumbo-bg.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.thumb-active {
-    outline: 2px solid #0d6efd;
-    outline-offset: 2px;
-}
-
-.accessory-item.active {
-    border-bottom: 3px solid #0d6efd;
-    padding-bottom: 25px;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, .58), rgba(0, 0, 0, .14)),
+    url("../img/jumbo-bg.png");
 }
 
 .hero-it-takes-two {
-    min-height: 520px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.55)),
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, .52), rgba(0, 0, 0, .14)),
     url("../img/it-takes-two-hero-banner-desktop.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .hero-logo {
-    max-width: 260px;
+  max-width: 280px;
 }
 
-.new-releases {
-    background-color: #1f1f1f;
+.hero-title {
+  font-size: clamp(2rem, 2.6vw, 2.7rem);
+}
+
+.hero-copy {
+  max-width: 370px;
+  font-size: .95rem;
+}
+
+.btn-ps-orange {
+  background-color: var(--ps-orange);
+}
+
+.btn-ps-orange:hover {
+  background-color: #b3350d;
+}
+
+.thumb-card {
+  border: 2px solid transparent;
+  border-radius: 18px;
+  overflow: hidden;
+  padding: 3px;
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.thumb-card:hover {
+  transform: translateY(-2px);
+}
+
+.thumb-card.active {
+  border-color: var(--ps-blue);
+}
+
+.console-main {
+  max-width: 620px;
+  margin-inline: auto;
+}
+
+.accessory-card {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 1rem;
+  color: #6d6d6d;
+}
+
+.accessory-card.active {
+  border-color: var(--ps-blue);
+}
+
+.accessory-img {
+  height: 84px;
+  width: 100%;
+  object-fit: contain;
+  margin-inline: auto;
+}
+
+.game-title {
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-top: .65rem;
+  margin-bottom: 0;
+}
+
+.product-img {
+  max-height: 190px;
+  object-fit: contain;
+}
+
+.product-title {
+  font-size: clamp(1.8rem, 2vw, 2rem);
+}
+
+.product-copy {
+  max-width: 320px;
 }
 
 .ps-plus {
-    background-color: #bebcbb;
+  background-color: var(--ps-plus-bg);
+}
+
+.ps-plus-logo {
+  max-width: 260px;
 }
 
 .ps-now {
-    background-color: #161c3b;
+  background-color: var(--ps-now-bg);
+}
+
+.ps-now-logo {
+  max-width: 260px;
 }
 
 .social-icon {
-    max-width: 70px;
-    margin-inline: auto;
+  width: 86px;
+  height: 86px;
+  object-fit: cover;
+  margin-inline: auto;
 }
 
-footer {
-    background-color: #00439c;
+.footer-ps {
+  background-color: var(--ps-footer);
 }
 
-.img-logo {
-    max-width: 10px;
+.footer-logo {
+  width: 100px;
 }
 
 .globe-icon {
-    width: 18px;
+  width: 16px;
+}
+
+.legal-logo {
+  width: 150px;
+}
+
+.footer-copy {
+  max-width: 760px;
+  font-size: .7rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 991.98px) {
+  .hero {
+    min-height: 460px;
+  }
+
+  .navbar-collapse {
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-space {
+    padding: 3.25rem 0;
+  }
+
+  .hero {
+    min-height: 420px;
+    background-position: center top;
+  }
+
+  .hero-logo {
+    max-width: 220px;
+  }
+
+  .hero-copy {
+    max-width: 300px;
+    font-size: .88rem;
+  }
+
+  .social-icon {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    min-height: 400px;
+  }
+
+  .section-title,
+  .display-console-title {
+    font-size: 2rem;
+  }
+
+  .product-img {
+    max-height: none;
+  }
 }
